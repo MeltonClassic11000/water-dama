@@ -88,10 +88,6 @@ a.btn.Inspection-btn:hover {
     color: #ffc107 !important;
 }
 
-.hero-section {
-    color: white;
-}
-
 h1.hero-title {
     font-size: clamp(24px, 4vw, 52px);
     text-align: center;
