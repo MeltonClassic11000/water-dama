@@ -369,6 +369,7 @@ p.description {
     padding: 7px;
     min-width: 50px;
     text-align: center;
+    background-color: #F7BF23;
 }
 
 .icon-box:hover {
