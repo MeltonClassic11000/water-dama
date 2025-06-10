@@ -1,5 +1,5 @@
 body {
-    font-family: "sora", sans-serif !important;
+    font-family: "sora", sans-serif;
     font-size: 15px;
 }
 
@@ -97,6 +97,8 @@ h1.hero-title {
     text-align: center;
     font-weight: 700;
     line-height: 1.3;
+    color: white;
+    margin-bottom: 24px;
 }
 
 #heroSlider {
@@ -137,6 +139,12 @@ h1.hero-title {
 .hero-para {
     font-size: 15px;
     color: #fff;
+}
+
+.expert-team-section{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 24px;
 }
 
 .expert-team-container {
