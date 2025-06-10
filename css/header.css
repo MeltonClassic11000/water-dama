@@ -1,0 +1,141 @@
+/* navbar */
+/* Position relative zaroori hai for submenu positioning */
+ .dropdown-submenu {
+     position: relative;
+}
+/* Initially hide submenu */
+ .dropdown-submenu > .dropdown-menu {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 100%;
+     margin-top: -1px;
+     z-index: 1000;
+     background-color: #fff;
+     min-width: 220px;
+     border: 1px solid rgba(0,0,0,.15);
+}
+/* Jab parent item par hover ho toh submenu dikha do */
+ .dropdown-submenu:hover > .dropdown-menu {
+     display: block;
+}
+/* Optional: hover effect submenu items */
+ .dropdown-submenu > .dropdown-menu > li > a:hover {
+     background-color: #007bff;
+     color: white;
+}
+ @media (min-width: 992px) {
+     .navbar .dropdown:hover .dropdown-menu {
+         display: block;
+         margin-top: 0;
+         padding: 0;
+         border: none;
+    }
+}
+ a.dropdown-item:hover {
+     background-color: #007bff !important;
+     color: #fff !important;
+}
+ .navbar {
+     background: transparent;
+}
+ a.dropdown-item {
+     background: #ffc107;
+     color: #000;
+     border: none;
+     padding: 15px;
+     font-size: 12px;
+}
+ .dropdown-menu {
+     padding-left: 15px;
+     padding-right: 15px;
+}
+ .nav-link {
+     color: white;
+     transition: all 0.3s ease;
+}
+ .nav-link:hover {
+     color: #ffc107 !important;
+     font-weight: bold;
+}
+ .nav-link.active {
+     color: #000 !important;
+     font-weight: bold;
+}
+ .phone-number {
+     color: white;
+     font-weight: bold;
+}
+ .phone-number:hover {
+     color: #ffc107;
+}
+ .fa-phone-alt:before {
+     content: "\f879";
+     background-color: #007bff;
+     color: #fff;
+     padding: 10px;
+     border-radius: 50%;
+     display: inline-flex ;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     font-size: 16px;
+}
+ a.nav-link.phone-number {
+     margin-right: 8px;
+     margin-left: -8px;
+}
+ .navbar-nav .nav-link:hover {
+     color: var(--primary-color);
+}
+
+ @media (max-width: 576px) {
+    /* Toggler button border and icon color when closed */
+     .navbar-toggler {
+         border: 1px solid #ffc107;
+    }
+     .navbar-nav > li:hover > .nav-link {
+         color: #fff !important;
+         background: #0d6efd;
+         font-weight: bold;
+    }
+     .navbar-toggler-icon {
+         background-image: none;
+        /* remove default hamburger */
+         width: 1.5em;
+         height: 1.5em;
+         background-color: #ffc107;
+         border-radius: 2px;
+    }
+    /* Dropdown background when toggler is open */
+     .navbar-collapse.show {
+         background-color: #ffc107;
+    }
+}
+ @media (min-width: 992px) {
+     .navbar .dropdown:hover .dropdown-menu {
+         display: block;
+         margin-top: 0;
+    }
+}
+ @media (max-width: 767px) {
+     .testimonial-card {
+         margin-bottom: 20px;
+    }
+     .navbar-nav .dropdown-menu {
+         position: static;
+         padding: 0;
+         border: none;
+    }
+}
+ @media (max-width: 767px) {
+     .testimonial-card {
+         margin-bottom: 20px;
+    }
+     .navbar-nav .dropdown-menu {
+         position: static;
+         padding: 0;
+         border: none;
+    }
+}
