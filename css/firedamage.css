@@ -93,15 +93,50 @@ textarea {
 
 .expert-team-container {
     margin-top: -80px;
+    position: relative;
+    background-color: #000;
+    padding: 40px 21px;
 }
 
-/* Section title styles */
+.half-sec-bg {
+    background: linear-gradient(rgba(246, 246, 246, 0.85), rgba(246, 246, 246, 0.85)), url('./../assets/bg_pattern.webp');
+    background-position: center;
+}
+
 .section-title {
     color: #000;
     /* Dark blue for section titles */
     font-weight: 700;
     font-size: 40px;
 
+}
+
+.sec-bg {
+    background: url('./../assets/ezgif.com-optijpeg-2.webp') center /cover no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.sec-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 78%);
+    z-index: -1;
+}
+
+.offer-icon {
+    color: #f3c527;
+    font-size: clamp(36px, 4.5vw, 50px);
+}
+
+.offer-label {
+    color: #000;
+    font-size: 18px;
+    font-family: 'jost-bold', sans-serif;
+    margin-bottom: 0;
 }
 
 h2.why-section-title {
@@ -135,11 +170,7 @@ p.description {
 
 
 /*  service Section styles */
-.service-card {
-    border: none;
-    margin-bottom: 30px;
-    height: 100%;
-}
+
 
 
 .service-icon {
@@ -153,16 +184,6 @@ p.description {
     padding: 60px 0;
 }
 
-.contact-title {
-    font-size: 15px;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.8em;
-    letter-spacing: 0.3em;
-    color: #F7BF23;
-}
-
-
 .contact-description {
     color: #666;
     font-size: 13px;
@@ -171,9 +192,9 @@ p.description {
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 /* contact-section styles */
@@ -228,12 +249,7 @@ p.description {
 }
 
 .service-card {
-    padding: 20px;
     margin-bottom: 20px;
-    max-width: 500px;
-    overflow: hidden;
-
-
 }
 
 .service-image {
@@ -338,16 +354,6 @@ p.description {
     color: #000;
 }
 
-h2.gallery-section-title {
-    font-size: 15px;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.8em;
-    letter-spacing: 0.3em;
-    color: #F7BF23;
-    text-align: center;
-}
-
 /* testimonial-section style */
 .testimonial-card {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -418,14 +424,13 @@ h2.gallery-section-title {
     color: #000;
 }
 
-.section-tag {
+.sec-badge {
     font-size: 15px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1.8em;
     letter-spacing: 0.3em;
     color: #F7BF23;
-    text-align: center;
 }
 
 /* contact-form-section style */
@@ -638,6 +643,9 @@ textarea {
 }
 
 @media (max-width:992px) {
+    .expert-team-container {
+        margin-top: 16px;
+    }
 
     .expert-team-section .border-right {
         border: none;
@@ -665,10 +673,6 @@ textarea {
         text-align: center;
     }
 
-    .contact-title {
-        text-align: center;
-    }
-
     .image-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -685,7 +689,7 @@ textarea {
     }
 
     .custom-btn-primary,
-    .custom-btn-secondary{
+    .custom-btn-secondary {
         padding: 9px 18px;
     }
 }
