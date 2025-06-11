@@ -15,6 +15,67 @@
     <!-- Slick Theme (optional) -->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style>
+        .feature-list li:before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: relative !important;
+            gap: 13px;
+            left: -11px !important;
+            color: #ffc107 !important;
+        }
+
+        h1.hero-title {
+            font-size: clamp(36px, 4vw, 52px);
+            text-align: center;
+            font-weight: 700;
+            line-height: 1.3;
+            color: white;
+            margin-bottom: 24px;
+        }
+
+        #heroSlider {
+            position: relative;
+            background: center /cover no-repeat;
+            transition: background-image 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            padding-top: clamp(60px, 12vw, 140px);
+            padding-bottom: clamp(60px, 11vw, 120px);
+        }
+
+        #heroSlider::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #000000;
+            opacity: .8;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            /* ensure text is above overlay */
+        }
+
+        .hero-para {
+            font-size: 15px;
+            color: #fff;
+        }
+    </style>
 </head>
 
 
@@ -130,14 +191,10 @@
                 </ul>
 
                 <div class="buttons mb-4">
-                    <div class="Inspection-btn">
-                        <a href="tel:+9724390229" class="btn Inspection-btn m-2">
+                        <a href="tel:+9724390229" class="custom-btn-secondary">
                             Call Us </a>
-                    </div>
-                    <div class="Inspection-btn">
                         <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection"
-                            class="btn Inspection-btn m-2"> Get Inspection </a>
-                    </div>
+                            class="custom-btn-primary"> Get Inspection </a>
                 </div>
             </div>
         </div>
@@ -234,10 +291,8 @@
                             <li style="color: black;">Family-Owned and Locally Operated</li>
                             <li style="color: black;">Reliable and Dedicated to Customer Satisfaction</li>
                         </ul>
-                        <button class="readmores">
-                            <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection">Get
+                            <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection" class="custom-btn-primary">Get
                                 inspection</a>
-                        </button>
                     </div>
                 </div>
 
@@ -312,10 +367,8 @@
                         <li style="color: black;">Thorough Restoration Method</li>
                         <li style="color: black;">Client-Focused Methodology</li>
                     </ul>
-                    <button class="readmores">
-                        <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection">Get inspection
+                        <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection" class="custom-btn-primary">Get inspection
                         </a>
-                    </button>
                 </div>
 
             </div>
@@ -400,10 +453,8 @@
                             <li style="color: black;">Innovative Fire Damage Restoration Solutions</li>
                             <li style="color: black;"> Customer Satisfaction</li>
                         </ul>
-                        <button class="readmores">
-                            <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection"> Get
+                            <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/#inspection" class="custom-btn-primary"> Get
                                 inspection</a>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -434,10 +485,8 @@
                                 Frisco,
                                 TX. Our services include rapid response, efficient moisture removal, comprehensive
                                 restoration, and proactive mold prevention.</p>
-                            <button class="readmores">
-                                <a href="https://intensadry.com/water-damage-cleanup-mitigation-frisco-tx/"> read
+                                <a href="https://intensadry.com/water-damage-cleanup-mitigation-frisco-tx/" class="custom-btn-primary"> read
                                     more</a>
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -462,9 +511,7 @@
                                 accidents. This process is crucial for ensuring safety, functionality, and aesthetic
                                 appeal
                                 after incidents.</p>
-                            <button class="readmores">
-                                <a href="https://intensadry.com/reconstruction-frisco-tx/"> read more</a>
-                            </button>
+                                <a href="https://intensadry.com/reconstruction-frisco-tx/" class="custom-btn-primary"> read more</a>
                         </div>
                     </div>
                 </div>
@@ -488,9 +535,7 @@
                                 process
                                 in Frisco, TX. We understand the devastating impact that fire can have on your home or
                                 business.</p>
-                            <button class="readmores">
-                                <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/"> read more</a>
-                            </button>
+                                <a href="https://intensadry.com/fire-damage-restoration-frisco-tx/" class="custom-btn-primary"> read more</a>
                         </div>
                     </div>
                 </div>
