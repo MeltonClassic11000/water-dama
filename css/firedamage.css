@@ -638,9 +638,6 @@ textarea {
 }
 
 @media (max-width:992px) {
-    .expert-team-container {
-        margin-top: 16px;
-    }
 
     .expert-team-section .border-right {
         border: none;
